@@ -136,22 +136,22 @@ int Cadet::Scholarship—alc()
 		return (0);
 
 	if (course == 1)
-		return (1500.25 + bonusScolarship);
+		return (1500 + bonusScolarship);
 
 	if (course == 2)
-		return (1725.25 + bonusScolarship);
+		return (1725  + bonusScolarship);
 
 	if (course == 3)
-		return (2000.50 + bonusScolarship);
+		return (2000  + bonusScolarship);
 
 	if (course == 4)
-		return (2750.75 + bonusScolarship);
+		return (2750  + bonusScolarship);
 
 	if (course == 5)
-		return (3400.15 + bonusScolarship);
+		return (3400  + bonusScolarship);
 
 	if (course == 6)
-		return (4200.35 + bonusScolarship);
+		return (4200  + bonusScolarship);
 }
 
 void operator<<(ostream& smth, Cadet operandCadet)

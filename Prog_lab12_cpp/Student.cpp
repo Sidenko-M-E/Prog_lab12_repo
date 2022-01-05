@@ -206,22 +206,22 @@ int Student::ScholarshipÑalc()
 		return (0);
 
 	if (course == 1)
-		return (1500.25);
+		return (1500);
 
 	if (course == 2)
-		return (1725.25);
+		return (1725);
 
 	if (course == 3)
-		return (2000.50);
+		return (2000);
 
 	if (course == 4)
-		return (2750.75);
+		return (2750);
 
 	if (course == 5)
-		return (3400.15);
+		return (3400);
 
 	if (course == 6)
-		return (4200.35);
+		return (4200);
 }
 
 void Student::Read()
