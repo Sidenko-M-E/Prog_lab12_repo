@@ -1,11 +1,16 @@
 #include <conio.h>
 #include <iostream>
+
 #include "Fio.h"
 #include "Human.h"
 #include "Student.h"
 #include "Teacher.h"
 #include "Faculty.h"
 #include "Cadet.h"
+
+#include "StaffMember.h"
+#include "Docent.h"
+#include "Assistant.h"
 
 int main()
 {
@@ -109,6 +114,28 @@ int main()
 		cout << "Cadet's scolarship is high.\n";
 	else
 		cout << "Cadet's scolarship is not high.\n";
+
+
+
+	cout << "\n------Abstract class demo----\n";
+	Fio fios[3]
+	{
+		Fio("Anasov", "Oleg", "Petrovich"),
+		Fio("Smirnov", "Vladislav", "Victorovich"),
+		Fio("Popov", "Sergey", "Trofimovich")
+	};
+
+	StaffMember* stuffMembers[3]
+	{
+		stuffMembers[0] = new Assistant(10, 10, fios[0]),
+		stuffMembers[1] = new Docent(10, 10, fios[1]),
+		stuffMembers[2] = new Assistant(3, 7, fios[2]),
+	};
+
+	for (int i = 0; i < 3; i++)
+		cout << "Salary of Staff Member: " << stuffMembers[i]->CalculateSalary() << endl;
+
+
 
 	/*cout << "Array content:\n";
 	count = 0;
