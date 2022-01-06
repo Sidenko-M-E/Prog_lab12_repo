@@ -311,11 +311,6 @@ namespace Prog_lab12
 			returnValue += "FIO: " + surname + " " + name + " " + patronymic;
 			return (returnValue);
         }
-
-        public void Display()
-		{
-			Console.Write("FIO: {0} {1} {2}\n", surname, name, patronymic);
-		}
 	}
 }
 

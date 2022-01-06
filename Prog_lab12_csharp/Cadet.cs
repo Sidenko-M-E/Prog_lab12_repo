@@ -2,7 +2,7 @@
 
 namespace Prog_lab12
 {
-	public class Cadet : Student
+	public class Cadet : Student, ICalculate
 	{
 		//Attributes
 		private int sessionRes;
@@ -127,5 +127,39 @@ namespace Prog_lab12
 				"\n" + base.ToString();
 			return (returnValue);
         }
-    }
+
+		public int ScholarshipСalc()
+		{
+			int bonusScolarship = 0;
+			if (sessionRes <= 24)
+				return (0);
+			if ((sessionRes >= 50) && (sessionRes <= 74))
+				bonusScolarship = 1000;
+			if ((sessionRes >= 75) && (sessionRes <= 100))
+				bonusScolarship = 2000;
+
+			if (course == 0)
+				return (0);
+
+			if (course == 1)
+				return (1500 + bonusScolarship);
+
+			if (course == 2)
+				return (1725 + bonusScolarship);
+
+			if (course == 3)
+				return (2000 + bonusScolarship);
+
+			if (course == 4)
+				return (2750 + bonusScolarship);
+
+			if (course == 5)
+				return (3400 + bonusScolarship);
+
+			if (course == 6)
+				return (4200 + bonusScolarship);
+
+			return (-1);
+		}
+	}
 }

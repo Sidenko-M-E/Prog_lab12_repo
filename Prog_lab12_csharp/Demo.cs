@@ -6,6 +6,7 @@ namespace Prog_lab12
 	{
 		static void Main(string[] args)
 		{
+			Random rnd = new Random();
 			Console.Write("--------Fio class--------\n");
 			Fio demoFio = new Fio("Sidenko");
 			Console.Write(demoFio.ToString());
@@ -50,8 +51,12 @@ namespace Prog_lab12
 
 
 			Console.Write("\n--------Human class--------\n");
-			Human demoHuman = new Human();
-			Console.Write(demoHuman.ToString());
+			Human demoHuman = new Human(rnd.Next(1899), rnd.Next(10, 60), rnd.Next(176, 200), rnd.Next(60, 100), 'M', demoFio);
+			Console.Write(demoHuman.ToString() + "\n");
+			Human newHuman = new Human();
+			newHuman = (Human)demoHuman.Clone();
+			demoHuman.fioField.SetPatronymic("abrakadabra");
+			Console.Write(newHuman.ToString() + "\n");
 			//Console.Write("Arrays of objects\n");
 			//Console.Write("One-dimensional array:\n");
 			//Random rnd = new Random();
@@ -92,9 +97,9 @@ namespace Prog_lab12
 
 
 
-			Console.Write("\n--------Student class--------\n");
-			Student demoStudent = new Student();
-			Console.Write(demoStudent.ToString());
+			//Console.Write("\n--------Student class--------\n");
+			//Student demoStudent = new Student();
+			//Console.Write(demoStudent.ToString());
 			//Console.Write("Arrays of objects\n");
 			//Console.Write("One-dimensional array:\n");
 			//Student[] arrStudent = new Student[5];
@@ -134,9 +139,9 @@ namespace Prog_lab12
 
 
 
-			Console.Write("\n--------Teacher class--------\n");
-			Teacher demoTeacher = new Teacher();
-			Console.Write(demoTeacher.ToString());
+			//Console.Write("\n--------Teacher class--------\n");
+			//Teacher demoTeacher = new Teacher();
+			//Console.Write(demoTeacher.ToString());
 			//Console.Write("Arrays of objects\n");
 			//Console.Write("One-dimensional array:\n");
 			//Teacher[] arrTeacher = new Teacher[5];
@@ -176,9 +181,9 @@ namespace Prog_lab12
 
 
 
-			Console.Write("\n--------Faculty class--------\n");
-			Faculty demoFaculty = new Faculty();
-			Console.Write(demoFaculty.ToString());
+			//Console.Write("\n--------Faculty class--------\n");
+			//Faculty demoFaculty = new Faculty();
+			//Console.Write(demoFaculty.ToString());
 			//Console.Write("Arrays of objects\n");
 			//Console.Write("One-dimensional array:\n");
 			//Faculty[] arrFaculty = new Faculty[5];

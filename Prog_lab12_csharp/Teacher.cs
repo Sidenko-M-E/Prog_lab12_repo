@@ -351,12 +351,5 @@ namespace Prog_lab12
 				humanField.ToString();
 			return (returnValue);
         }
-        public void Display()
-		{
-			Console.Write("working experience: {0} years\n", workExp);
-			Console.Write("scientific degree: {0}\n", degree);
-			Console.Write("faculty name: {0}\n", facultyName);
-			humanField.Display();
-		}
 	}
 }

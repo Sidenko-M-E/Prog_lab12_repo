@@ -595,18 +595,5 @@ namespace Prog_lab12
 				"\nquantity of disciplines: " + quantityOfDisciplines;
 			return (returnValue);
         }
-        public void Display()
-		{
-			Console.Write("faculty name: {0}\n", facultyName);
-			Console.Write("quantity of students: {0}\n", quantityOfStudents);
-			Console.Write("quantity of bachelors: {0}\n", quantityOfBachelors);
-			Console.Write("quantity of masters: {0}\n\n", quantityOfMasters);
-
-			Console.Write("quantity of teachers: {0}\n", quantityOfTeachers);
-			Console.Write("quantity of candidates: {0}\n", quantityOfCandidates);
-			Console.Write("quantity of doctors: {0}\n\n", quantityOfDoctors);
-
-			Console.Write("quantity of disciplines: {0}\n", quantityOfDisciplines);
-		}
 	}
 }

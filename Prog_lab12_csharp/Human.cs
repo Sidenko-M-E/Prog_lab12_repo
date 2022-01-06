@@ -2,7 +2,7 @@
 
 namespace Prog_lab12
 {
-    public class Human
+    public class Human : ICloneable
     {
 		//Attributes
 		private int id;
@@ -82,7 +82,7 @@ namespace Prog_lab12
 			}
 			set
 			{
-				fioField = value;
+				fioField = new Fio(value.GetSurname(), value.GetName(), value.GetPatronymic());
 			}
 		}
 
@@ -128,7 +128,8 @@ namespace Prog_lab12
 				SetHeight(bufHeight);
 				SetWeight(bufWeight);
 				SetGender(bufGender);
-				fioField = new Fio(bufFio.GetSurname(), bufFio.GetName(), bufFio.GetPatronymic());
+				fioField = bufFio;
+				//fioField = new Fio(bufFio.GetSurname(), bufFio.GetName(), bufFio.GetPatronymic());
 			}
 		}
 
@@ -360,14 +361,9 @@ namespace Prog_lab12
 				"\n" + fioField.ToString();
 			return (returnValue);
         }
-        public void Display()
+		public object Clone()
 		{
-			Console.Write("id: {0}\n", id);
-			Console.Write("age: {0}\n", age);
-			Console.Write("height: {0}\n", height);
-			Console.Write("weight: {0:f1}\n", weight);
-			Console.Write("gender: {0}\n", gender);
-			fioField.Display();
+			return new Human(id, age, height, weight, gender, fioField);
 		}
 	}
 }

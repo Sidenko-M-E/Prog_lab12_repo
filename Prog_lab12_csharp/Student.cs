@@ -2,7 +2,7 @@
 
 namespace Prog_lab12
 {
-	public class Student
+	public class Student:ICalculate
 	{
 		//Attributes
 		protected int course;
@@ -383,7 +383,6 @@ namespace Prog_lab12
 			SetAll(check.GetCourse(), check.GetEduProg(), check.GetGroup(),
 			check.GetFacultyName(), check.humanField);
 		}
-
         public override string ToString()
         {
 			string returnValue = "";
@@ -394,6 +393,31 @@ namespace Prog_lab12
 				"\n" + humanField.ToString();
 			return (returnValue);
         }
+
+        public int ScholarshipСalc()
+        {
+			if (course == 0)
+				return (0);
+			if (course == 1)
+				return (1500);
+
+			if (course == 2)
+				return (1725);
+
+			if (course == 3)
+				return (2000);
+
+			if (course == 4)
+				return (2750);
+
+			if (course == 5)
+				return (3400);
+
+			if (course == 6)
+				return (4200);
+
+			return (-1);
+		}
     }
 }
 
