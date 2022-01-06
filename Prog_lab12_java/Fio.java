@@ -235,7 +235,6 @@ public class Fio implements Cloneable
 		return (returnValue);
 	}
 
-	/*
 	public Object clone()
 	{
 		try
@@ -248,5 +247,4 @@ public class Fio implements Cloneable
 		}
 		return this;
 	}
-	*/
 }

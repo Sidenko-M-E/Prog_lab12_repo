@@ -23,7 +23,7 @@ public class Demo{
 
 		demoHuman.fioField.setPatronymic("abrakadabra");
 		System.out.print(newHuman.toString() + "\n");
-		System.out.print("It's a shallow copy\n");
+		System.out.print("It's a deep copy\n");
 		demoHuman.fioField.setPatronymic("Vladimirovich");
 
 

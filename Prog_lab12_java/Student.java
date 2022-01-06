@@ -6,7 +6,7 @@ public class Student implements Calculate
 {
 	//Attributes
 	protected int course;
-	protected	String eduProg;
+	protected String eduProg;
 	protected String group;
 	protected String facultyName;
 	public Human humanField;
@@ -23,6 +23,7 @@ public class Student implements Calculate
 
 	public Student(Human bufHuman)
 	{
+		System.out.print("Student constructor with parameters has been called.\n");
 		course = 0;
 		eduProg = "unstated";
 		group = "unstated";
@@ -34,6 +35,7 @@ public class Student implements Calculate
 
 	public Student(int bufCourse, String bufEduProg, String bufGroup, String bufFacultyName, Human bufHuman)
 	{
+		System.out.print("Student constructor with parameters has been called.\n");
 		Student check = new Student();
 
 		if (check.setCourse(bufCourse) || check.setEduProg(bufEduProg) || check.setGroup(bufGroup) ||
@@ -179,6 +181,7 @@ public class Student implements Calculate
 
 	public boolean setAll(int bufCourse, String bufEduProg, String bufGroup, String bufFacultyName, Human bufHuman)
 	{
+		System.out.print("Student SetAll has been called.\n");
 		Student check = new Student();
 
 		if (check.setCourse(bufCourse) || check.setEduProg(bufEduProg) || check.setGroup(bufGroup) ||
@@ -186,11 +189,11 @@ public class Student implements Calculate
 			return (true);
 		else
 		{
-			this.setCourse(bufCourse);
-			this.setEduProg(bufEduProg);
-			this.setGroup(bufGroup);
-			this.setFacultyName(bufFacultyName);
-			this.humanField.setAll(bufHuman.getId(), bufHuman.getAge(),
+			setCourse(bufCourse);
+			setEduProg(bufEduProg);
+			setGroup(bufGroup);
+			setFacultyName(bufFacultyName);
+			humanField.setAll(bufHuman.getId(), bufHuman.getAge(),
 					bufHuman.getHeight(), bufHuman.getWeight(),bufHuman.getGender(), bufHuman.fioField);
 			return (false);
 		}

@@ -314,7 +314,7 @@ public class Human implements Cloneable
 		try
 		{
 			Human clone = (Human)super.clone();
-			//clone.fioField = (Fio)fioField.clone();
+			clone.fioField = (Fio)fioField.clone();
 			return (clone);
 		}
 		catch(CloneNotSupportedException e)
