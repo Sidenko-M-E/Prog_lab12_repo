@@ -42,42 +42,8 @@ namespace Prog_lab12
 			Console.Write("-----ToString() overload-----\n");
 			Student demoStudent = new Student(rnd.Next(4), "Bachelor", "HS-03", "FoHS", demoHuman);
 			Console.Write(demoStudent.ToString());
-			//Console.Write("Arrays of objects\n");
-			//Console.Write("One-dimensional array:\n");
-			//Student[] arrStudent = new Student[5];
-			//arrStudent[0] = new Student(rnd.Next(4), "Bachelor", "HS-03", "FoHS", arrHuman[0]);
-			//arrStudent[1] = new Student(rnd.Next(4), "Bachelor", "FI-03", "FoMS", arrHuman[1]);
-			//arrStudent[2] = new Student(rnd.Next(4), "Master", "IT-03", "FoIT", arrHuman[2]);
-			//arrStudent[3] = new Student(rnd.Next(4), "Bachelor", "CS-03", "FoCS", arrHuman[3]);
-			//arrStudent[4] = new Student(rnd.Next(4), "Master", "JK-03", "FoJK", arrHuman[4]);
 
-			//Console.Write("Array content:\n");
-			//count = 0;
-			//for (i = 0; i < 5; i++)
-			//{
-			//	arrStudent[i].Display();
-			//	if (arrStudent[i].GetCourse() == 3)
-			//		count++;
-			//}
-			//Console.Write("\nNumber of students on 3 course: {0}\n", count);
 
-			//Console.Write("\nTwo-dimensional array:\n");
-			//Student[,] students = new Student[2, 2];
-			//students[0,0] = new Student(rnd.Next(4), "Master", "HS-03", "FoHS", humans[0,0]);
-			//students[0,1] = new Student(rnd.Next(4), "Bachelor", "MS-03", "FoMS", humans[0,1]);
-			//students[1,0] = new Student(rnd.Next(4), "Master", "IT-03", "FoIT", humans[1,0]);
-			//students[1,1] = new Student(rnd.Next(4), "Bachelor", "CS-03", "FoCS", humans[1,1]);
-
-			//Console.Write("Array content:\n");
-			//count = 0;
-			//for (i = 0; i < 2; i++)
-			//	for (j = 0; j < 2; j++)
-			//	{
-			//		if (students[i, j].GetFacultyName() == "FoMS")
-			//			count++;
-			//		students[i, j].Display();
-			//	}
-			//Console.Write("\nNumber of students on FoMS faculty: {0}\n", count);
 
 			Console.Write("\n\n--------Cadet class--------\n");
 			Console.Write("\n---- nested Student Constructor -----\n");
