@@ -4,7 +4,7 @@ namespace Prog_lab12
 {
 	public class Assistant : StaffMember
 	{
-		Assistant(int bufWorkExp, int bufNumberOfPubl, Fio bufFio):base(bufWorkExp, bufNumberOfPubl, bufFio)
+		public Assistant(int bufWorkExp, int bufNumberOfPubl, Fio bufFio):base(bufWorkExp, bufNumberOfPubl, bufFio)
 		{ 
 		}
 

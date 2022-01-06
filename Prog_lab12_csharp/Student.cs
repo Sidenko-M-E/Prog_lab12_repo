@@ -128,6 +128,7 @@ namespace Prog_lab12
 		}
 		public Student(Human bufHuman)
 		{
+			Console.Write("Student constructor with parameters has been called.\n");
 			course = 0;
 			eduProg = "unstated";
 			group = "unstated";
@@ -138,6 +139,7 @@ namespace Prog_lab12
 		}
 		public Student(int bufCourse, string bufEduProg, string bufGroup, string bufFacultyName, Human bufHuman)
 		{
+			Console.Write("Student constructor with parameters has been called.\n");
 			Student check = new Student();
 
 			if (check.SetCourse(bufCourse) || check.SetEduProg(bufEduProg) || check.SetGroup(bufGroup) ||
@@ -277,6 +279,7 @@ namespace Prog_lab12
 		}
 		public bool SetAll(int bufCourse, string bufEduProg, string bufGroup, string bufFacultyName, Human bufHuman)
 		{
+			Console.Write("Student SetAll has been called.\n");
 			Student check = new Student();
 
 			if (check.SetCourse(bufCourse) || check.SetEduProg(bufEduProg) || check.SetGroup(bufGroup) ||

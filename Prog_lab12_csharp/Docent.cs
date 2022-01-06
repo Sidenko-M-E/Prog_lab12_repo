@@ -4,7 +4,7 @@ namespace Prog_lab12
 {
 	public class Docent:StaffMember
 	{
-		Docent(int bufWorkExp, int bufNumberOfPubl, Fio bufFio) : base(bufWorkExp, bufNumberOfPubl, bufFio)
+		public Docent(int bufWorkExp, int bufNumberOfPubl, Fio bufFio) : base(bufWorkExp, bufNumberOfPubl, bufFio)
 		{
 		}
 

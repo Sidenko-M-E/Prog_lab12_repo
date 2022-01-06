@@ -128,8 +128,7 @@ namespace Prog_lab12
 				SetHeight(bufHeight);
 				SetWeight(bufWeight);
 				SetGender(bufGender);
-				fioField = bufFio;
-				//fioField = new Fio(bufFio.GetSurname(), bufFio.GetName(), bufFio.GetPatronymic());
+				fioField = new Fio(bufFio.GetSurname(), bufFio.GetName(), bufFio.GetPatronymic());
 			}
 		}
 

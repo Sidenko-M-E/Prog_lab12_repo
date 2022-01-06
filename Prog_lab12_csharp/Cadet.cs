@@ -123,7 +123,7 @@ namespace Prog_lab12
 		{
             string returnValue = "";
 			returnValue += "session results: " + sessionRes.ToString() +
-				"military rank: " + militaryRank +
+				"\nmilitary rank: " + militaryRank +
 				"\n" + base.ToString();
 			return (returnValue);
         }
