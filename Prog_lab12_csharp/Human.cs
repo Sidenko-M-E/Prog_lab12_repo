@@ -362,7 +362,9 @@ namespace Prog_lab12
         }
 		public object Clone()
 		{
-			return new Human(id, age, height, weight, gender, fioField);
+			Human returnValue = (Human)this.MemberwiseClone();
+			returnValue.fioField = (Fio)fioField.Clone();
+			return (returnValue);
 		}
 	}
 }

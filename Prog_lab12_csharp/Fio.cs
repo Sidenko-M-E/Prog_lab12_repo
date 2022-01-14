@@ -2,7 +2,7 @@
 
 namespace Prog_lab12
 {
-	public class Fio
+	public class Fio : ICloneable
 	{
 		//Attributes
 		private string surname;
@@ -311,6 +311,11 @@ namespace Prog_lab12
 			returnValue += "FIO: " + surname + " " + name + " " + patronymic;
 			return (returnValue);
         }
+
+		public object Clone()
+		{
+			return ((Fio)this.MemberwiseClone());
+		}
 	}
 }
 
